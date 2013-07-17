@@ -1,0 +1,8 @@
+﻿<ul>
+    <li><span>Name</span><input type="text" data-ng-model="Book.Name" /></li>
+    <li><span>Description</span><input type="text" data-ng-model="Book.Description" /></li>
+    <li><span>Author</span><select data-ng-model="AuthorId" data-ng-options="value.Id as (value.FirstName + ' ' + value.LastName) for value in Authors"></select></li>
+    <li><span>Published</span><input type="text" data-ng-model="Book.Published" /></li>
+    <li><span>Copyright</span><input type="text" data-ng-model="Book.Copyright" /></li>
+</ul>
+<a class="btn" data-ng-click="Save()" href="#!/{{Book.Type}}/{{Book.Id}}">Save</a>

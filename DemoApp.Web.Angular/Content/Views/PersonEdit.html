@@ -1,0 +1,7 @@
+﻿<ul>
+    <li><span>First name</span><input type="text" data-ng-model="Person.FirstName" /></li>
+    <li><span>Last name</span><input type="text" data-ng-model="Person.LastName" /></li>
+    <li><span>Birthdate</span><input type="text" data-ng-model="Person.BirthDate" /></li>
+    <li><span>Gender</span><select data-ng-model="Person.Gender" data-ng-options="Gender[value] as value for value in Gender._map"></select></li>
+</ul>
+<a class="btn" data-ng-click="Save()" href="#!/{{Person.Type}}/{{Person.Id}}">Save</a>

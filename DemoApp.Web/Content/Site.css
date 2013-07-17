@@ -1,0 +1,146 @@
+﻿* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*-----------------------------------------------------------*/
+.central-container {
+	width: 800px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+.central-container h2 {
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	margin-top: -40px;
+}
+.central-container .main {
+	border: 1px solid #bbbbbb;
+	background: #ededed;
+	height: 100%;
+	box-shadow: 0 3px 4px -3px #000000;
+	position: relative;
+}
+.application-content {
+	height: 100%;
+}
+.application-content .content-browser {
+	width: 220px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-right: 1px solid #bbbbbb;
+	box-shadow: 1px 0 0 #fefefe;
+	padding: 5px;
+	overflow: auto;
+}
+.application-content .details-area {
+	padding: 20px 20px 20px 240px;
+	height: 100%; 
+}
+.application-content .details-area > div {
+	height: 100%;
+}
+.application-content .details-area > div > div {
+	margin-bottom: 10px;
+}
+.application-content .details-area > div label {
+	font-weight: bold;
+	width: 100px;
+	display: inline-block;
+}
+.application-content .details-area > div .buttons {
+	text-align: right;
+}
+.application-content .content-browser .content-object {
+	border: 1px solid #bbbbbb;
+	padding: 5px 10px;
+	margin: 3px 0;
+}
+.application-content .content-browser .content-object .description {
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.application-content .content-browser .content-object .name {
+	padding-left: 26px;
+	line-height: 24px;
+	height: 24px;
+}
+.application-content .content-browser .content-object.person .name {
+	background: url(/Content/Images/person.png) no-repeat;
+}
+.application-content .content-browser .content-object.book .name {
+	background: url(/Content/Images/book.png) no-repeat;
+}

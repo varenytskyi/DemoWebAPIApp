@@ -1,0 +1,148 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+<div class="central-container">
+	<h2>Demo App</h2>
+	<div class="main"></div>
+</div>
+
+@* Templates *@
+<script id="application-content" type="text/html">
+	<div class="application-content"></div>
+</script>
+<script id="content-browser" type="text/html">
+    <div class="content-browser"><div>
+</script>
+<script id="details-area" type="text/html">
+    <div class="details-area"><div>
+</script>
+<script id="content-view" type="text/html">
+    <div class="content-object" data-bind="css: koContent().Type , click: onclick">
+		<div class="name">
+			<span data-bind="text: koContent().Name"></span>
+		</div>
+		<div class="description">
+			<span data-bind="text: koContent().Description"></span>
+		</div>
+    </div>
+</script>
+<script id="person-view" type="text/html">
+    <div class="person-view">
+        <div>
+			<label>FirstName:</label>
+            <span data-bind="text: koContent().FirstName"></span>
+        </div>
+        <div>
+			<label>LastName:</label>
+            <span data-bind="text: koContent().LastName"></span>
+        </div>
+        <div>
+			<label>BirthDate:</label>
+            <span data-bind="text: koContent().BirthDate"></span>
+        </div>
+        <div>
+			<label>Gender:</label>
+            <span data-bind="text: getGenderName()"></span>
+        </div>
+		<div class="buttons">
+			<button data-bind="click: edit">Edit</button>
+		</div>
+    </div>
+</script>
+<script id="person-edit" type="text/html">
+    <div class="person-edit">
+		<div>
+			<label>FirstName:</label>
+            <input type="text" data-bind="value: koContent().FirstName"/>
+        </div>
+		<div>
+			<label>LastName:</label>
+            <input type="text" data-bind="value: koContent().LastName"/>
+        </div>
+		<div>
+			<label>BirthDate:</label>
+            <input type="text" data-bind="value: koContent().BirthDate"/>
+        </div>
+		<div>
+			<label>Gender:</label>
+            <select type="text" data-bind="options: genders, optionsText: 'name', optionsValue: 'value', value: koContent().Gender"/>
+        </div>
+		<div class="buttons">
+			<button data-bind="click: save">Save</button>
+		</div>
+    </div>
+</script>
+<script id="book-view" type="text/html">
+    <div class="book-view">
+        <div>
+			<label>Caption:</label>
+            <span data-bind="text: koContent().Name"></span>
+        </div>
+        <div>
+			<label>Description:</label>
+            <span data-bind="text: koContent().Description"></span>
+        </div>
+        <div>
+			<label>Author:</label>
+            <span data-bind="text: getAuthorName()"></span>
+        </div>
+        <div>
+			<label>Published:</label>
+            <span data-bind="text: koContent().Published"></span>
+        </div>
+        <div>
+			<label>Copyright:</label>
+            <span data-bind="text: koContent().Copyright"></span>
+        </div>
+		<div class="buttons">
+			<button data-bind="click: edit">Edit</button>
+		</div>
+    </div>
+</script>
+<script id="book-edit" type="text/html">
+    <div class="book-edit">
+		<div>
+			<label>Caption:</label>
+            <input type="text" data-bind="value: koContent().Name"/>
+        </div>
+		<div>
+			<label>Description:</label>
+            <input type="text" data-bind="value: koContent().Description"/>
+        </div>
+		<div>
+			<label>Author:</label>
+            <select type="text" data-bind="options: getAuthors(), optionsText: 'Name', value: koContent().Author"/>
+        </div>
+		<div>
+			<label>Published:</label>
+            <input type="text" data-bind="value: koContent().Published"/>
+        </div>
+		<div>
+			<label>Copyright:</label>
+            <input type="text" data-bind="value: koContent().Copyright"/>
+        </div>
+		<div class="buttons">
+			<button data-bind="click: save">Save</button>
+		</div>
+    </div>
+</script>
+
+@section scripts {
+    <script type="text/javascript" src="@Url.Content("/Scripts/knockout-2.2.0.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/knockout.mapping-latest.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/WebProxy/WebProxyBase.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/WebProxy/BookWebProxy.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/WebProxy/ContentWebProxy.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/WebProxy/PersonWebProxy.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/ViewModels/ObjectBase.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/ViewModels/Content.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/ViewModels/Person.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/ViewModels/Book.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/ViewModels/Registry.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/ViewModels/ContentBrowser.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/ViewModels/DetailsArea.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/Application/ApplicationViewModel.js")"></script>
+	<script type="text/javascript">
+		$(function () { window.App = new ApplicationViewModel(); });
+	</script>
+}

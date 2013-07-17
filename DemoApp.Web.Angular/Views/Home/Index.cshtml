@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts {
+    <script src="@Url.Content("~/Scripts/Application/Base.js")"></script>
+    <script src="@Url.Content("~/Scripts/Application/Content.js")"></script>
+    <script src="@Url.Content("~/Scripts/Application/Person.js")"></script>
+    <script src="@Url.Content("~/Scripts/Application/Book.js")"></script>
+    <script src="@Url.Content("~/Scripts/Application/Application.js")"></script>
+}
+<div class="container clearfix" data-ng-controller="ContentController">
+    <div class="sidebar">
+        <a data-ng-repeat="item in Collection" class="item {{item.Type}}" href="#!/{{item.Type}}/{{item.Id}}">
+            <div class="name">{{item.Name}}</div>
+            <div>{{item.Description}}</div>
+        </a>
+    </div>
+    <div class="info clearfix ng-view"></div>
+</div>

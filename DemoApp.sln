@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.Data", "DemoApp.Data\DemoApp.Data.csproj", "{A5037715-EED9-45E5-A586-FB45EE5DA800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.Repositories", "DemoApp.Repositories\DemoApp.Repositories.csproj", "{90BA0FA1-4473-45FC-AE84-3D6C6C4806E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.Business", "DemoApp.Business\DemoApp.Business.csproj", "{DAB7ED30-D63B-49F1-A7BF-68B328D7F4F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.WebApi", "DemoApp.WebApi\DemoApp.WebApi.csproj", "{8B85BACC-1F2F-403C-A760-128B76FC0EFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.Web", "DemoApp.Web\DemoApp.Web.csproj", "{F966C8F9-F568-4900-8F71-46A3C0E2D50A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.Core", "DemoApp.Core\DemoApp.Core.csproj", "{241544B4-47FB-4B57-B019-75F82005534A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.Web.Angular", "DemoApp.Web.Angular\DemoApp.Web.Angular.csproj", "{8E1BAD5A-0E7D-4408-B0FD-2833ADFBA482}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5037715-EED9-45E5-A586-FB45EE5DA800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5037715-EED9-45E5-A586-FB45EE5DA800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5037715-EED9-45E5-A586-FB45EE5DA800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5037715-EED9-45E5-A586-FB45EE5DA800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BA0FA1-4473-45FC-AE84-3D6C6C4806E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BA0FA1-4473-45FC-AE84-3D6C6C4806E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BA0FA1-4473-45FC-AE84-3D6C6C4806E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BA0FA1-4473-45FC-AE84-3D6C6C4806E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB7ED30-D63B-49F1-A7BF-68B328D7F4F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB7ED30-D63B-49F1-A7BF-68B328D7F4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB7ED30-D63B-49F1-A7BF-68B328D7F4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB7ED30-D63B-49F1-A7BF-68B328D7F4F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B85BACC-1F2F-403C-A760-128B76FC0EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B85BACC-1F2F-403C-A760-128B76FC0EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B85BACC-1F2F-403C-A760-128B76FC0EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B85BACC-1F2F-403C-A760-128B76FC0EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F966C8F9-F568-4900-8F71-46A3C0E2D50A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F966C8F9-F568-4900-8F71-46A3C0E2D50A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F966C8F9-F568-4900-8F71-46A3C0E2D50A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F966C8F9-F568-4900-8F71-46A3C0E2D50A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{241544B4-47FB-4B57-B019-75F82005534A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{241544B4-47FB-4B57-B019-75F82005534A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{241544B4-47FB-4B57-B019-75F82005534A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{241544B4-47FB-4B57-B019-75F82005534A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E1BAD5A-0E7D-4408-B0FD-2833ADFBA482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E1BAD5A-0E7D-4408-B0FD-2833ADFBA482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E1BAD5A-0E7D-4408-B0FD-2833ADFBA482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E1BAD5A-0E7D-4408-B0FD-2833ADFBA482}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,123 @@
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.bordered (@arguments) {
+    border: @arguments;
+}
+
+@font-color: #333333;
+@background-color: #f7f7f7;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: @font-color;
+    width: 100%;
+
+    .container {
+        width: 50%;
+        padding: 10px;
+        margin: 50px auto;
+        background: @background-color;
+        .bordered(1px solid #e1e1e8);
+        .rounded-corners(3px);
+
+        .sidebar {
+            width: 25%;
+            float: left;
+
+            .item {
+                display: block;
+                padding: 5px;
+                margin: 5px;
+                text-decoration: none;
+                .bordered(1px solid #e1e1e8);
+
+                > div {
+                    height: 24px;
+                    line-height: 24px;
+                    padding-left: 30px;
+                }
+            }
+
+            .item.person {
+                .name {
+                    background: url(/Content/Images/person.png) no-repeat;
+                }
+            }
+
+            .item.book {
+                .name {
+                    background: url(/Content/Images/book.png) no-repeat;
+                }
+            }
+        }
+
+        .info {
+            width: 75%;
+            float: right;
+
+            ul {
+                margin: 5px;
+                padding: 0;
+                list-style-type: none;
+                .bordered(1px solid #e1e1e8);
+
+                li {
+                    padding: 5px 10px;
+                    line-height: 28px;
+
+                    span {
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 30%;
+                    }
+                }
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 5px 20px;
+                margin-left: 5px;
+                color: @font-color;
+                overflow: hidden;
+                text-decoration: none;
+                .bordered(1px solid #e1e1e8);
+                .rounded-corners(3px);
+            }
+
+            input[type="text"] {
+                padding: 2px;
+            }
+        }
+    }
+}
