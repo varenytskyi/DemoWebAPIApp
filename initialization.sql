@@ -14,6 +14,7 @@ INSERT INTO ContentObject ([Name],[Description]) VALUES ('name 7', 'Description 
 GO
 
 
+
 INSERT INTO [Person] ([id], [FirstName],[LastName],[BirthDate],[Gender])
      VALUES (1, 'Person 1','LastName', GETDATE(), 0)
 GO
@@ -55,23 +56,23 @@ GO
 
 
 INSERT INTO Book ([Id],[AuthorId],[Published],[Copyright])
-     VALUES (8, 1, GETDATE(), 'Copyright ©  2012')
+     VALUES (8, 1, GETDATE(), 'Copyright Â©  2012')
 GO
 INSERT INTO Book ([Id],[AuthorId],[Published],[Copyright])
-     VALUES (9, 1, GETDATE(), 'Copyright ©  2012')
+     VALUES (9, 1, GETDATE(), 'Copyright Â©  2012')
 GO
 INSERT INTO Book ([Id],[AuthorId],[Published],[Copyright])
-     VALUES (10, 1, GETDATE(), 'Copyright ©  2012')
+     VALUES (10, 1, GETDATE(), 'Copyright Â©  2012')
 GO
 INSERT INTO Book ([Id],[AuthorId],[Published],[Copyright])
-     VALUES (11, 1, GETDATE(), 'Copyright ©  2012')
+     VALUES (11, 1, GETDATE(), 'Copyright Â©  2012')
 GO
 INSERT INTO Book ([Id],[AuthorId],[Published],[Copyright])
-     VALUES (12, 1, GETDATE(), 'Copyright ©  2012')
+     VALUES (12, 1, GETDATE(), 'Copyright Â©  2012')
 GO
 INSERT INTO Book ([Id],[AuthorId],[Published],[Copyright])
-     VALUES (13, 1, GETDATE(), 'Copyright ©  2012')
+     VALUES (13, 1, GETDATE(), 'Copyright Â©  2012')
 GO
 INSERT INTO Book ([Id],[AuthorId],[Published],[Copyright])
-     VALUES (14, 1, GETDATE(), 'Copyright ©  2012')
+     VALUES (14, 1, GETDATE(), 'Copyright Â©  2012')
 GO
